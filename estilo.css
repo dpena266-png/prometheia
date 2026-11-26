@@ -1,0 +1,62 @@
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#170d13);--ink:light-dark(#2b1822,#f6e9ef);--soft:light-dark(#7b5d6b,#c9aebb);--rosa:#d9467a;--rosa2:light-dark(#fce4ee,#3a1a28);--line:light-dark(#f0d3de,#4a2a39);--oro:#c48c28;--panel:light-dark(#fff5f9,#21131b)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Manrope,system-ui,sans-serif;overflow-x:clip}
+a{color:var(--rosa)}
+img{max-width:100%}
+.band{padding-block:clamp(28px,4vw,64px);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
+.wrap{max-width:1180px;margin:0 auto}
+nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding:16px max(5vw,16px);border-bottom:1px solid var(--line)}
+nav .marca{display:flex;align-items:center;gap:10px;font:700 22px/1 "DM Serif Display",Georgia,serif;color:var(--ink);text-decoration:none;margin-right:auto}
+nav .marca .logo{width:36px;height:36px;border-radius:10px;background:url(data:image/webp;base64,UklGRkoFAABXRUJQVlA4WAoAAAAQAAAALwAALwAAQUxQSJoAAAABcBtJsqtsfR0CmiSf/X9oCFcl8BNA47967xYtFhcjIhSkbcDsWFinAUAC9N1kE/mF42bi+kACPLRqNhR401RIHjpekCHad7IYyMUYCRKMWnqjwObZjpCk1ZqeInuuqxT1vbrU6Jyj6WTx3HEMFDrQzS0qFW2+pyll3BvFNv692eTV77yeI3pO6Tmo56ye4/qfIP8hP/g58h8FVlA4IIoEAABQFACdASowADAAPl0kjUWjoiEcbt4AOAXEtgBOmUI8l+A8wSoP4bWESBddP7v7me0B5gHOT8xfQJ9AD+l/4DrO/QA8uf2M/3N/cD2tcBjzm8D/Ct6Rj5kt/57hblA8B9Ivjg9FfO9RgCs/+zX9uKZbOv7yZkLIreTE1LrivWjJkp5CTziEuycyPg5Xc915aVzZovvIeh/yLHH8P6CpVDPstUo5xrIdSDcPYAAA/vhumJuWKvGaTMa91rAGVMCwei88aTjn5yQOHEOwj0VZCXObUve2wvXgyiE9UE9DkoaYGmyM6ABOVY345gktSQzX4wqXJpP8cvqGimNgLC4/1MEwRzvCUb0pT0qvGVZXwKDQR/edLgn3VD84hXQzCIrV9MPWg7mbfAPWFJtfs2qfxlMc5BWR6g1Ke1C8NJBDTjYNrqIBJeKx9az0oTwGgRJdciaYHTxQ4pOwEMEqrvkuR07Yst6CZWLcb21g9viRrH2Tk9HLQ/6+J/B6kdIIYYWyCIlkVX5QL8LvzM+msHt83Bq+8ma79uIXvW0vb+6PWUomdWHJOXffKvqpsmHZKGxGP3YyItIuhW4RUfeZKBarglQcyYlE8CfSgrOM85867pvuQB48ohG0+PJQZTD0cEfwWd5nxwpKWnPQ+weVxE3j/ulfB/nUYYmgg/D9j3+FrRZ8ODEjevLzIWa8A56fP/IKbTqtePmBU10vOAO/IuQ6PjDvMEP7skMCLHSznR17/lkI0WlmfMnnvM2xSjU1N0DPhE+fE7XikKR9rX6cN9JYzbhJE9QYkqbO948+f+IqvxvZfnd3hsDPZLe5LqZW+xTdAEyonr6iF/XepxDB9rVOYcnngdgW+yD9Hk0L0fCVGOCGwbdRng+BH0waip9BFPMvqADZPqdZHGl4JFp2/Bh9e+7Ig5utPp28AeSker1rdgKaLQBl9pgtYziBcHFTlw9Hwn/B+0e07Lr13OW92uMocsv9XcCkkl2rx48PGYTJtcKgjExnETYFPy0sURRJg4v1s68krKLKctq46PfIpEnCsmWEeZd6Ka7rlDBdQ54GAyVJL9cHVclegR7Qa5xL/u2U5Q1VDR8KfoXAlNLQXYXRBebUBiTdgIqIdlGNy/tM4eC1FuDHQgt38INl8LOiy2XierAxPQ0b0Vh9cGxzt30jt3rC7r64uAAFpj9dYf+NRaEkXdshx8X/3SxGc9iiNrTt6wXOdSyLoN8AhJ9VtTTN/2ysid2Y4/DZzlla4LWgJxsb/hbDGBAJuWsqDKTgMd43mcjyPbDKMI1Lk1qBWz/Wjjf0wjYr1m2eONS5SXEEH2o5ihyXk1T/l8i/XlBTtMrg214vPL/aGlFcJzMHG5t187Cwz4ALiyxDinuni5KjW94bgHWm1wWsfeK06hqFm8iQt4qPXumc2fjiZ1/ircj7cdsTx+2EoLfTFXvbUf9mV4L7dcMaOVcvl8FM45sq5lb2ZaY7bc1VrAZ3AhgE4MxNq0L85/WZipNnFievy2Pl501z6pVDq7zNXLGOb4afjRyFqAAigOQOjTstQAAA) center/cover;display:inline-block}
+nav a{text-decoration:none;font-weight:600;color:var(--ink)}
+nav a.activo{color:var(--rosa)}
+h1{font:400 clamp(36px,5vw,52px)/1.05 "DM Serif Display",Georgia,serif;letter-spacing:-.02em;margin:0 0 18px}
+h2{font:400 clamp(26px,3vw,34px)/1.1 "DM Serif Display",Georgia,serif;margin:0 0 14px}
+h3{font-size:18px;margin:0 0 6px}
+p{margin:0 0 14px;max-width:68ch}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px;align-items:center}
+.lead{font-size:18px;color:var(--soft)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
+.chips span{background:var(--rosa2);color:var(--rosa);font-weight:700;font-size:14px;padding:7px 14px;border-radius:99px}
+.equipos{position:relative;min-height:540px}
+.portatil{position:absolute;left:0;right:30px;top:0;background:#2b1822;border-radius:18px 18px 6px 6px;padding:12px 12px 0}
+.portatil .pantalla{background:#fff5f9;border-radius:8px;height:290px;padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:12px;color:#2b1822}
+.portatil .base{height:18px;background:#4a2a39;margin:0 -24px;border-radius:0 0 14px 14px}
+.cel{position:absolute;right:0;bottom:0;width:170px;height:300px;background:#2b1822;border-radius:28px;padding:9px}
+.cel .pantalla{background:#fff5f9;border-radius:21px;height:100%;padding:16px 12px;color:#2b1822;overflow:hidden}
+.ficha{background:#fff;border-radius:14px;padding:12px;box-shadow:0 2px 6px rgba(176,48,94,.12);font-size:12.5px;line-height:1.45}
+.ficha b{display:block;font-size:14px;margin-bottom:4px}
+.term{display:flex;justify-content:space-between;gap:8px;border:1.5px solid var(--rosa);border-radius:10px;padding:6px 8px;margin-top:6px;font-size:12px}
+.term.urg{border-color:#d93025}
+.term .d{color:#d93025;font-weight:800;white-space:nowrap}
+.tit{font:700 20px/1.1 "DM Serif Display",Georgia,serif;color:#b0305e;margin-bottom:8px}
+.mini{font-size:11.5px;color:#7b5d6b}
+.sync{position:absolute;left:24px;bottom:8px;background:var(--rosa);color:#fff;font-weight:800;font-size:13px;padding:8px 14px;border-radius:99px;white-space:nowrap}
+.rejilla{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.tarjeta{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:22px}
+.tarjeta p{font-size:15px;color:var(--soft);margin:0}
+.ico{width:44px;height:44px;border-radius:14px;background:var(--rosa);display:grid;place-items:center;margin-bottom:14px}
+.ico svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.franja{background:var(--rosa);color:#fff}
+.franja h2,.franja p{color:#fff}
+.dos{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.pasos{counter-reset:p;list-style:none;padding:0;margin:0}
+.pasos li{counter-increment:p;display:grid;grid-template-columns:40px 1fr;gap:12px;margin-bottom:14px}
+.pasos li::before{content:counter(p);width:32px;height:32px;border-radius:50%;background:#fff;color:var(--rosa);font-weight:800;display:grid;place-items:center}
+.flujo{background:rgba(255,255,255,.14);border-radius:22px;padding:22px}
+.flujo div{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.25)}
+.flujo div:last-child{border:0}
+.flujo b{white-space:nowrap}
+.legal{max-width:820px;margin:0 auto}
+.legal h2{margin-top:36px}
+.legal p,.legal li{max-width:none}
+.legal li{margin-bottom:8px}
+.aviso{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--rosa);border-radius:12px;padding:16px 18px;margin:18px 0}
+footer{border-top:1px solid var(--line);color:var(--soft);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+@media(max-width:900px){.hero,.dos{grid-template-columns:minmax(0,1fr)}.rejilla{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.rejilla{grid-template-columns:minmax(0,1fr)}.equipos{min-height:440px}.portatil{right:10px}.portatil .pantalla{height:250px;grid-template-columns:1fr}.portatil .pantalla .b2{display:none}.cel{width:130px;height:260px}.cel .ficha{font-size:11px}.sync{left:12px;bottom:4px}table{font-size:13px}th,td{padding:6px 4px}}
